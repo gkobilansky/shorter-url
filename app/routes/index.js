@@ -3,8 +3,6 @@
 var path = process.cwd();
 var timeStamp = require(path + '/app/controllers/timestamp.js');
 
-
-
 module.exports = function (app) {
 
 	app.route('/')
@@ -15,13 +13,5 @@ module.exports = function (app) {
 	var timestamp = new timeStamp();	
 		
     app.route('/:time')
-       .get(timestamp.getTime) 
+       .get(timestamp.getTime);
 };
-
-
-// function(req, res) {
-       	
-//       	res.send('It is' + req.params.time + '!');
-//           console.log(req.params.time);
-           
-// }
