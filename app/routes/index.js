@@ -1,7 +1,7 @@
 'use strict';
 
 var path = process.cwd();
-var timeStamp = require(path + '/app/controllers/timestamp.js');
+var reqParser = require(path + '/app/controllers/reqParser.js');
 
 module.exports = function (app) {
 
@@ -10,8 +10,8 @@ module.exports = function (app) {
 			res.sendFile(path + '/public/index.html');
 		});
 		
-	var timestamp = new timeStamp();	
+	var reqparser = new reqParser();	
 		
-    app.route('/:time')
-       .get(timestamp.getTime);
+    app.route('/whoami')
+       .get(reqparser.getHeader);
 };
