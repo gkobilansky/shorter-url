@@ -6,7 +6,7 @@ User stories:
 
 ## Example usage:
 
-`https://request-header-parser-gkobilansky.c9users.io/whoami`
+`https://https://stark-stream-79701.herokuapp.com/whoami`
 
 ## Example output
 
