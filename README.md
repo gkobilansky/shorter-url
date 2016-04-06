@@ -6,7 +6,7 @@ User stories:
 
 ## Example usage:
 
-`https://evening-temple-51271.herokuapp.com/whoami`
+`https://stark-stream-79701.herokuapp.com/whoami`
 
 ## Example output
 
