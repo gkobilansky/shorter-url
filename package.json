@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/gkobilansky/shorter-url"
   },
-  "homepage": "http://gk.lancekey.com/",
+  "homepage": "https://fierce-plains-96108.herokuapp.com/",
   "bugs": "https://github.com/gkobilansky/shorter-url/issues",
   "keywords": [
     "Express",
