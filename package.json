@@ -1,5 +1,5 @@
 {
-  "name": "short-url-fcc",
+  "name": "shorter-url",
   "version": "1.0.0",
   "description": "Send a url, get a -sometimes- shorter url back.",
   "main": "server.js",
