@@ -10,7 +10,7 @@ Results are in JSON format for both the form and API for now.
 ### Sample result:
 
 Submit: `facebook.com`
-Receive: `{"original_url":"facebook.com","short_url":"https://url-shortener-example.io/8228"}
+Receive: `{"original_url":"facebook.com","short_url":"https://url-shortener-example.io/8228"}`
          
 
 
