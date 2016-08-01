@@ -14,13 +14,20 @@ function reqparser(app, db) {
         }
         
         console.log(url);
-        var urlObj = {
-        "original_url": url,
-        "short_url": process.env.APP_URL + linkGen()
-        };
-
-       save(urlObj, db);
-       res.send(urlObj);
+        
+        if(!validateURL(url)) {
+            res.send({
+            "error": "This is not a valide URL."
+            });
+        } else {
+            var urlObj = {
+            "original_url": url,
+            "short_url": process.env.APP_URL + linkGen()
+            };
+    
+           save(urlObj, db);
+           res.send(urlObj);
+        }
     };
 
     this.getUrl = function (req, res) {

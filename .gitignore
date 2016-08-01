@@ -4,6 +4,7 @@ data
 # Node modules
 node_modules/
 .eslintrc
+.env
 
 # Logs
 logs
