@@ -8,18 +8,21 @@
     <body>
         <div class="container">
             <h1 class="header">
-                API Basejump: Request Header Parser
+                URL kinda-shortner
             </h1>
-            <blockquote>
-                User stories:
-                <ul>If I go to /whoami, it'll show me some info about my IP address and browser and stuff</ul>
-            </blockquote>
-            <h3>Example usage:</h3>
-            <code>https://stark-stream-79701.herokuapp.com/whoami</code><br>
-            <h3>Example output:</h3>
-            <code>
-                {"ipaddress":"99.69.112.239","language":"en-US","software":"Macintosh; Intel Mac OS X 10_11_2"}
-            </code>
+            <form class="input-group" action="/" method="post">
+               <input type="url" class="form-control" id="url" name="url" placeholder="ex: https://google.com">
+               <span class="input-group-btn">
+                   <button type="submit" class="btn btn-primary">Shorten that link!</button>
+               </span>
+            </form>
+            <h3>Sample result:</h3>
+            <p>http://lancekey.com/2375</p>
+            <h3>Also available as API</h3>
+           <p><code>lancekey.com/new/www.example.com</code> responds with JSON:</p>
+           <pre>
+           {"original_url":"http://google.com","short_url":"https://url-shortener-microservice-gkobilansky.c9users.io/8228","_id":"579a1835fcdc933448e65a85"}
+           </pre>
         </div>
     </body>
 </html>

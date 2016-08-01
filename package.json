@@ -1,7 +1,7 @@
 {
-  "name": "timestamp-fcc",
+  "name": "short-url-fcc",
   "version": "1.0.0",
-  "description": "Send a date, get a date back.",
+  "description": "Send a url, get a -sometimes- shorter url back.",
   "main": "server.js",
   "repository": {
     "type": "git",
@@ -16,16 +16,21 @@
     "freecodecamp"
   ],
   "scripts": {
-  "start": "node server.js"
+    "start": "node server.js"
   },
   "author": "Gene Kobilansky",
   "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.15.2",
     "dotenv": "^1.2.0",
     "express": "^4.12.4",
     "express-session": "^1.11.3",
+    "mongodb": "^2.0.33",
     "mongoose": "^4.1.0",
     "passport": "^0.3.0",
     "passport-github": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.10.0"
   }
 }

@@ -2,14 +2,14 @@
 
 User stories:
 
-> If I go to /whoami, it'll show me some info about my IP address and browser and stuff
+> If I send a url, it'll give me back a new url with JSON object that redirects to the original
 
 ## Example usage:
 
-`https://stark-stream-79701.herokuapp.com/whoami`
+`https://stark-stream-79701.herokuapp.com/http://google.com` will give you something like `https://lanckey.com/1234` and plugging `https://lanckey.com/1234` into your browser will take you to `http://google.com`
 
 ## Example output
 
-`{"ipaddress":"99.69.112.239","language":"en-US","software":"Macintosh; Intel Mac OS X 10_11_2"}`
+`{ "original_url":"http://google.com", "short_url":"https://lanckey.com/1234" }`
 
 
