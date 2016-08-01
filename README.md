@@ -1,15 +1,16 @@
-# API Basejump: Request Header Parser
+# URL kinda-shortner
 
-User stories:
+## A Free Code Camp project
 
-> If I send a url, it'll give me back a new url with JSON object that redirects to the original
+Submit URL (via API or form) and get a new URL back. Use new URL, get redirected to old URL.
 
-## Example usage:
+Results are in JSON format for both the form and API for now.
+          
+            
+### Sample result:
 
-`https://stark-stream-79701.herokuapp.com/http://google.com` will give you something like `https://lanckey.com/1234` and plugging `https://lanckey.com/1234` into your browser will take you to `http://google.com`
-
-## Example output
-
-`{ "original_url":"http://google.com", "short_url":"https://lanckey.com/1234" }`
+Submit: `facebook.com`
+Receive: `{"original_url":"facebook.com","short_url":"https://url-shortener-example.io/8228"}
+         
 
 
