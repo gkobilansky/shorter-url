@@ -5,10 +5,10 @@
   "main": "server.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gkobilansky/timestamp"
+    "url": "https://github.com/gkobilansky/shorter-url"
   },
-  "homepage": "http://www.clementinejs.com/",
-  "bugs": "https://github.com/gkobilansky/timestamp/issues",
+  "homepage": "http://gk.lancekey.com/",
+  "bugs": "https://github.com/gkobilansky/shorter-url/issues",
   "keywords": [
     "Express",
     "Node",
