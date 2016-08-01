@@ -8,7 +8,7 @@ var express = require('express'),
 require('dotenv').load();
 
 var host = process.env.IP,
-    url = `mongodb://${process.env.IP}:27017/urldatabase`;
+    url = process.env.MONGODB_URI || `mongodb://${process.env.IP}:27017/urldatabase`;
 
 mongo.connect(url, function (err, db) {
     
